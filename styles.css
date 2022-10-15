@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+}
+
+.card-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /*   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; */
+}
+.card-section.rating--state {
+  z-index: 9999;
+}
+
+.container {
+  max-width: 17rem;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(213, 19%, 18%),
+    hsl(213, 19%, 12%)
+  );
+  padding: 1.2rem 1.4rem;
+  border-radius: 9px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+/*---------------- Rating state ----------------- */
+/* .rating--state {
+  display: none;
+} */
+
+.icon-container {
+  z-index: 2;
+  background-color: hsl(213, 19%, 22%);
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-container img {
+  height: 80%;
+}
+.text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.text--head {
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+.text--description {
+  font-size: 0.6rem;
+  color: hsl(217, 12%, 63%);
+  line-height: 1.5;
+}
+
+.rating-container {
+  display: flex;
+  /* gap: 2.2rem; */
+  justify-content: space-between;
+}
+
+.rating--value {
+  border: none;
+  width: 1rem;
+  height: 1rem;
+  padding: 1rem;
+  margin-bottom: 0.6rem;
+
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 22%);
+  color: hsl(217, 12%, 63%);
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating--value:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+/* .rating--value:active {
+  background-color: hsl(217, 12%, 63%);
+} */
+
+.rating--value span {
+  font-size: 0.7rem;
+}
+
+.submit-btn {
+  border: none;
+  border-radius: 11px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.098rem;
+  padding: 0.4rem 0;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.submit-btn:active,
+.submit-btn:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+/*---------------- Thank You state ----------------- */
+/* .thank-you--state {
+  display: none;
+} */
+
+/* .card-section--01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+.center-align {
+  text-align: center;
+}
+.svg-container {
+  width: 6rem;
+  margin: 0 auto;
+
+  /* height: 6rem; */
+}
+.svg-container img {
+  width: 100%;
+}
+.rate-text--wrapper {
+  width: 65%;
+  margin: 0 auto;
+  background-color: hsl(213, 19%, 22%);
+  padding: 0.4rem;
+  border-radius: 9px;
+  color: hsl(25, 97%, 53%);
+}
+.rate-text {
+  font-size: 0.65rem;
+}
+/* 
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
