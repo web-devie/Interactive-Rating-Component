@@ -32,18 +32,19 @@ body {
 }
 
 .container {
-  max-width: 17rem;
+  max-width: 40rem;
+  /* height: 38rem; */
   background-image: linear-gradient(
     to bottom,
     hsl(213, 19%, 18%),
     hsl(213, 19%, 12%)
   );
-  padding: 1.2rem 1.4rem;
-  border-radius: 9px;
+  padding: 2.8rem;
+  border-radius: 11px;
 
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 2.4rem;
 }
 /*---------------- Rating state ----------------- */
 /* .rating--state {
@@ -54,9 +55,9 @@ body {
   z-index: 2;
   background-color: hsl(213, 19%, 22%);
   position: relative;
-  width: 2rem;
-  height: 2rem;
-  padding: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem;
   border-radius: 50%;
 
   display: flex;
@@ -69,15 +70,15 @@ body {
 .text-box {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 1rem;
 }
 .text--head {
-  font-size: 1.2rem;
+  font-size: 3rem;
   color: hsl(0, 0%, 100%);
   font-weight: 700;
 }
 .text--description {
-  font-size: 0.6rem;
+  font-size: 1.6rem;
   color: hsl(217, 12%, 63%);
   line-height: 1.5;
 }
@@ -92,7 +93,7 @@ body {
   border: none;
   width: 1rem;
   height: 1rem;
-  padding: 1rem;
+  padding: 2.2rem;
   margin-bottom: 0.6rem;
 
   border-radius: 50%;
@@ -115,16 +116,17 @@ body {
 } */
 
 .rating--value span {
-  font-size: 0.7rem;
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
 .submit-btn {
   border: none;
-  border-radius: 11px;
-  font-size: 0.7rem;
+  border-radius: 50px;
+  font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 0.098rem;
-  padding: 0.4rem 0;
+  padding: 1.2rem 0;
   background-color: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
   cursor: pointer;
@@ -151,7 +153,7 @@ body {
   text-align: center;
 }
 .svg-container {
-  width: 6rem;
+  width: 14rem;
   margin: 0 auto;
 
   /* height: 6rem; */
@@ -160,15 +162,19 @@ body {
   width: 100%;
 }
 .rate-text--wrapper {
-  width: 65%;
+  width: 52%;
   margin: 0 auto;
   background-color: hsl(213, 19%, 22%);
-  padding: 0.4rem;
-  border-radius: 9px;
+  padding: 0.85rem 0;
+  border-radius: 50px;
   color: hsl(25, 97%, 53%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .rate-text {
-  font-size: 0.65rem;
+  font-size: 1.4rem;
 }
 /* 
 FONT SIZE SYSTEM (px)
